@@ -9,9 +9,13 @@ If you have heard about regular expressions before, you have probably encountere
 
 ![Regex is a superpower](images/regular_expressions.png)
 
+(Image from [XKCD](https://xkcd.com/208/))
+
 On the other hand, many people feel very strongly that there are some things (like [parsing HTML](https://stackoverflow.com/a/1732454)) that regular expressions are definitely **not** suited for.
 
 ![Don't use regex to parse XHTML](images/html_regex_so_snippet.png)
+
+(Image from [Stack Overflow](https://stackoverflow.com/a/1732454))
 
 So, what are regular expressions? What can they be used for? And should you go ahead and use them to parse HTML anyway?
 

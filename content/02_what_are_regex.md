@@ -7,6 +7,19 @@ nav_order: 5
 
 In this section we will explore the similarities and differences between the terms "regular expressions", "wildcards", and "shell globbing", and learn some of the basic syntax of regular expressions.
 
+## Regular expressions
+
+A regular expression is a series of special characters that describe a _pattern_ in a string of text according to a standardized set of rules.
+
+Some regular expressions can be difficult to read at first because every character in the expression has a specific rule-defined meaning. For example, the regular expression below contains letters, numbers, and punctuation to describe a typical username consisting of a specific number of lowercase characters and numbers as well as (optionally) a hyphen or underscore:
+
+![Anatomy of a regular expression](images/regexp-en.png)
+
+(Image from [Learn Regex the Easy Way](https://github.com/ziishaned/learn-regex/blob/master/img/regexp-en.png))
+
+Specifically, this pattern will match the text `john_doe`, `jo-hn_doe` and `john12_as`, but _not_ `Jo` because that string contains an uppercase letter (and is also too short).
+
+
 ## Wildcards
 
 A **wildcard** is a special character that represents one or more unknown other characters. It is very common in a wide range of contexts and applications -- particularly when searching through text -- to have one or more wildcards available to expand the range of possible results.
