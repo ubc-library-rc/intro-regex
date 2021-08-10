@@ -16,3 +16,9 @@ Reference material:
 * [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) - JavaScript regular expression reference from Mozilla Developer Network
 * [Regular Expressions](https://eloquentjavascript.net/09_regexp.html) - chapter on regex from the book _Eloquent JavaScript_
 * [JavaScript Regular Expression Enlightenment](http://codylindley.com/techpro/2013_05_14__javascript-regular-expression-/) - A detailed guide to regular expressions (advanced level)
+
+Character lists:
+
+* [ASCII](https://en.wikipedia.org/wiki/ASCII#Character_set) - Wikipedia
+* [Unicode Character Table](https://unicode-table.com/en/)
+* [Emoji unicode characters for use on the web](https://apps.timwhitlock.info/emoji/tables/unicode)
