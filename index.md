@@ -30,4 +30,4 @@ At the end of this workshop, you will be able to:
 
 ## Resources
 
-* [eg. link to external slides]
+* Please download the repository zip file [here](https://github.com/ubc-library-rc/intro-regex/archive/refs/heads/main.zip). We will be using the data in the repository during the workshop.
