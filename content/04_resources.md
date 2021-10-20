@@ -8,7 +8,6 @@ nav_order: 9
 Tools:
 
 * [RegExr](https://regexr.com/) - A free online tool for learning, building, and testing regular expressions
-* [Dillinger](https://dillinger.io/) - Online Markdown editor
 
 Reference material:
 
