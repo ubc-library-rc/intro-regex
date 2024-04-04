@@ -19,7 +19,7 @@ nav_order: 9
 ## Character lists
 
 * [ASCII](https://en.wikipedia.org/wiki/ASCII#Character_set) - Wikipedia
-* [Unicode Character Table](https://unicode-table.com/en/)
+* [Unicode Character Table](https://symbl.cc/en/)
 * [Emoji unicode characters for use on the web](https://apps.timwhitlock.info/emoji/tables/unicode)
 
 ## Challenges
