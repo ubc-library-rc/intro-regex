@@ -8,6 +8,7 @@ nav_order: 9
 ## Tools
 
 * [RegExr](https://regexr.com/) - A free online tool for learning, building, and testing regular expressions
+* [regex101](https://regex101.com/) - Another free online tool for learning, building, and testing regular expressions
 
 ## Reference material
 
