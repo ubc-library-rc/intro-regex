@@ -23,11 +23,12 @@ At the end of this workshop, you will be able to:
 
 | 0:00 | Welcome and using Zoom|
 | 0:05 | Introduction |
-| 0:15 | What regular expressions are (and aren't) |
-| 0:45 | Basic syntax |
-| 1:05 | Finding and replacing text |
-| 1:30 | Wrap-up and Discussion |
+| 0:10 | What are regular expressions? |
+| 0:30 | Regex syntax |
+| 1:00 | Finding and replacing text |
+| 1:20 | Hands-on exercises |
+| 1:45 | Wrap-up and discussion |
 
 ## Resources
 
-* Please download the repository zip file [here](https://github.com/ubc-library-rc/intro-regex/archive/refs/heads/main.zip). We will be using the data in the repository during the workshop.
+* Please download the repository zip file [here](https://github.com/ubc-library-rc/intro-regex/archive/refs/heads/main.zip). We will be using the files in the 'data' folder during the workshop.

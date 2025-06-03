@@ -21,6 +21,4 @@ So, what are regular expressions? What can they be used for? And should you go a
 
 **Regular expressions** (often referred to as **regex** or **regexp**, and abbreviated as **RE**) are a standardized ("regular") way of representing patterns in text using special symbols and syntax ("expressions").
 
-Regexes (sometimes pluralized as "regexen") share some features with the _wildcards_ commonly found in many applications, and may seem to be confusingly similar to the _shell globbing_ used by modern command-line interfaces.
-
-In this workshop, we will first take a look at the similarities and differences between wildcards, shell globbing, and regexes, and then explore the special syntax of common flavours of regex as well as how to use this syntax to find and replace text in a variety of applications (for example, `grep`, `sed`, and `awk`) and programming languages (for example, JavaScript, Ruby, and Python).
+In this workshop, we'll start with learning what regular expressions are and why they're useful. We'll then learn the syntax of regular expressions, take a look at some examples of where they can be useful, and then we'll get some hands on experience using them ourselves with some exercises.
