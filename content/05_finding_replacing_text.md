@@ -14,9 +14,8 @@ Here's a situation where regex would be useful to manipulate text.
 
 You have a 100 page text document and you've realized that, throughout, there are words that have three, or four, or more 'a's in a row. You'd like to cut these down to the correct number of 'a's (one), but your document also has the name 'Isaac' in it, which you'd like to leave alone. You don't want to go through all 100 pages manually. How do you find and correct the typos?
 
-<br>
 
-Answer:
+**Answer:**
 
 Matching on: `(?<![Ii]s)a{2,}`
 
@@ -33,7 +32,6 @@ You can then choose to replace all of these multiple 'a's with single 'a's.
 While having multiple 'a's may not be so common, it is incredibly common to need to fix typos or other errors en masse or to need to find very specific strings in a large amount of text. For example, encoding errors are common and sometimes can't be fixed at the source and need to be modified by hand... or in our case, with regular expressions!
 
 <br>
-<br>
 
 Example 2
 {: .label .label-green}
@@ -44,9 +42,8 @@ Though our examples so far have been mostly word-based, regex is just as good wi
 
 How might you match all of these?
 
-<br>
 
-Answer:
+**Answer:**
 
 Matching on: `(?:-?\d){10,13}`
 
@@ -56,7 +53,6 @@ The brackets create a group and the `?:` make it into a non-capturing group (pre
 
 [Test it out here!](https://regex101.com/r/MgOkK2/2)
 
-<br>
 
 # Hands on exercises
 
@@ -68,9 +64,8 @@ If you haven't already downloaded the repository files, please do so by clicking
 
 In the file 'postal.txt', we find a list of what seem to be postal codes interspersed within strings of letters and numbers that look like postal codes, but are actually gibberish. We'd like to be able to match all of the gibberish lines so that we can delete them. This list is 553 lines long, so it's too long to do by hand. How might we match only the gibberish? Give it a shot yourself before we discuss.
 
-<br>
 
-Answer:
+**Answer:**
 
 Taking a look at the list, it seems that the postal codes are the only strings that have a space in them. So, the pattern we need to match is: any 3 characters, followed by _not_ a space, followed by any 3 characters.
 
@@ -104,7 +99,6 @@ This is just a small sample of the lines in the text file, but you can see that 
 
 [Test it out here!](https://regex101.com/r/RDWI50/1)
 
-<br>
 
 ## Vancouver wiki
 
@@ -124,7 +118,6 @@ Despite this quote being partially a joke, it's getting at a truth which is that
 
 In the file 'vancouver-wiki.html.txt', we find a bunch of HTML code. It's pretty hard to read the way it is, and we'd like to clean it up so that the HTML code is removed and we're left with only the content text. There's another text file called 'vancouver-wiki.txt' that's already been cleaned up; this is what we're aiming at. Give cleaning the text up a shot before we discuss.
 
-<br>
 
 **Answer:**
 
@@ -144,7 +137,6 @@ That works like we wanted! All of the HTML tags are matched while the content te
 
 ![Find and Replace](images/find_and_replace.png)
 
-<br>
 
 ## Bike racks
 
