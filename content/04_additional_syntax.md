@@ -10,10 +10,10 @@ In this section, we'll take a look at some more in depth syntax.
 
 There are some regular expressions that are used so frequently that there are shortcuts for them:
 
-`\w` | Shortcut for any word character: any letter, digit, or underscore, '[a-zA-Z0-9_]'.
-`\W` | Any non-word character: anything **except** '[a-zA-Z0-9_]'.
-`\d` | Any digit: '[0-9]'.
-`\D` | Any non-digit: anything **except** '[0-9]'.
+`\w` | Shortcut for any word character: any letter, digit, or underscore, [a-zA-Z0-9_].
+`\W` | Any non-word character: anything **except** [a-zA-Z0-9_].
+`\d` | Any digit: [0-9].
+`\D` | Any non-digit: anything **except** [0-9].
 `\s` | Any whitespace character: any space, tab, or newline.
 `\S` | Any non-whitespace character: anything **except** any space, tab, or newline.
 `\n` | Matches a newline.

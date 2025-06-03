@@ -108,8 +108,3 @@ but not:
 Hopefully this makes more sense to you than it did a minute ago. [Test it out here!](https://regex101.com/r/H25lpZ/2) 
 
 Try out some other possible usernames or phrases to see what matches or doesn't match.
-
-Example 4
-{: .label .label-green}
-
-
