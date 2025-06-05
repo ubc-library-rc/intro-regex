@@ -9,17 +9,9 @@ In this section we will learn about what regular expressions are, and learn some
 
 ## Regular expressions
 
-A regular expression (regex for short) is a series of special characters that describe a _pattern_ in a string of text according to a standardized set of rules. This pattern gets compared to the string and either it matches or doesn't - it's kind of like the 'find' function but with superpowers. You may be familiar with the concept of a wildcard character. For example, in Microsoft Word, the `?` character allows you to search for 'any character'. So, searching for `c?t` would find each of the following results: `cat`, `cot`, `cut`, `c t`. Regular expressions are similar to this, but it's a much expanded and more powerful system. Regular expressions are also standardized across programs, whereas wildcards are usually program specific and therefore less useful.
+A regular expression (regex for short) is a series of characters that describe a _pattern_ in a string of text according to a standardized set of rules. This pattern gets compared to the string and either it matches or doesn't - it's kind of like the 'find' function but with superpowers. You may be familiar with the concept of a wildcard character. For example, in Microsoft Word, the `?` character allows you to search for 'any character'. So, searching for `c?t` would find each of the following results: `cat`, `cot`, `cut`, `c t`. 
 
-Some regular expressions can be difficult to read at first because every character in the expression has a specific rule-defined meaning. For example, the regular expression below contains letters, numbers, and punctuation to describe a typical username consisting of a specific number of lowercase characters and numbers as well as, optionally, an underscore or hyphen:
-
-![Anatomy of a regular expression](images/regexp-en.png)
-(Image from [Learn Regex the Easy Way](https://github.com/ziishaned/learn-regex/blob/master/img/regexp-en.png))
-
-This pattern matches any text that: is anchored to the start of a line; contains any number of the letters `a-z`, the numbers `0-9`, underscores, and/or hyphens; is 3 to 15 characters long; and is anchored at the end of the line. 
-So, this pattern will match the text `john_doe`, `jo-hn_doe` and `john12_as`, but _not_ `Jo` because one, that string contains an uppercase letter and two, it's too short.
-
-This is a more complex regular expression, but in this workshop, we'll start with simpler ones and break it down for you step by step.
+Regular expressions are similar to this, but it's a much expanded and more powerful system. Regular expressions are also standardized across programs, whereas wildcards are usually program specific and therefore less useful.
 
 ## Why are regular expressions useful?
 

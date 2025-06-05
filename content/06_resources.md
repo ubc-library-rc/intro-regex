@@ -12,11 +12,11 @@ nav_order: 10
 
 ## Reference material
 
-* [Learn regex the easy way](https://github.com/ziishaned/learn-regex) - A guide to using regular expressions (intermediate level)
+* [Learn regex the easy way](https://github.com/ziishaned/learn-regex) - A guide to using regular expressions
 * [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) - JavaScript regular expression reference from Mozilla Developer Network
 * [Regular Expressions](https://eloquentjavascript.net/09_regexp.html) - chapter on regex from the book _Eloquent JavaScript_
 * [JavaScript Regular Expression Enlightenment](http://codylindley.com/techpro/2013_05_14__javascript-regular-expression-/) - A detailed guide to regular expressions (advanced level)
-* [Mastering Regular Expressions by by Jeffrey E.F. Friedl](https://www.oreilly.com/library/view/mastering-regular-expressions/0596528124/) - A very comprehensive book covering both basic and advanced regular expressions as well as some programming information and information on the flavours of regex
+* [Mastering Regular Expressions by Jeffrey E.F. Friedl](https://www.oreilly.com/library/view/mastering-regular-expressions/0596528124/) - A very comprehensive book covering both basic and advanced regular expressions as well as some programming information and information on the flavours of regex ([here it is as an ebook at UBC Library](https://go.exlibris.link/4L9XNYY4))
 
 ## Character lists
 

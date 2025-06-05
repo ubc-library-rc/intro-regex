@@ -19,7 +19,7 @@ You have a 100 page text document and you've realized that, throughout, there ar
 
 Matching on: `(?<![Ii]s)a{2,}`
 
-This regex has a negative lookbehind: `(?<!...)`. It means that the pattern you give after (in our case, `a{2,}`), does not match if what comes before it in your text is in the negative lookbehind. 
+This regex has a negative lookbehind: `(?<!...)`. It means that the pattern you give after (in our case, `a{2,}`) will not match if what comes before it in your text is in the negative lookbehind, but will match otherwise. In other words, we are preventing matches if the content of the negative lookbehind is found before `a{2,}`.
 
 So, this regular expression says: match every instance of 2 or more 'a's, except where 'Is' or 'is' appears before those 'a's. We accounted for instances where the name 'Isaac' might not be capitalized. Using this regular expression, here's what would match:
 
@@ -138,26 +138,59 @@ That works like we wanted! All of the HTML tags are matched while the content te
 ![Find and Replace](images/find_and_replace.png)
 
 
+Open the find and replace function, put your regular expression in the "Find" search bar, select the regular expressions option (circled in red) and leave the "Replace" search bar empty. Click "Replace All" and you'll get your cleaned up text.
+
 ## Bike racks
 
+In the file 'bike-racks.csv', there is a long list of addresses in Vancouver where there are bike racks installed. We'd like to find out which of these addresses have 5 bike racks installed using regular expressions. How would you do this? Give it a shot before we discuss.
 
 
+**Answer:**
+
+While there are many ways to solve this with or without using regular expressions, here's one way of doing it with regular expressions. Working with the comma-separated values in a text editor instead of in a spreadsheet, we need to match the address, including the first comma, but only if the number of racks installed is 5. Sounds like a positive lookahead is going to help here.
+
+The easiest way to figure this out is to do it in pieces, so first, let's make sure we can match just the address, regardless of what comes after. The addresses are anchored to the start of the line, and are at least one digit, followed by a comma, followed by at least one but up to infinite letters of either case, digits, and spaces. We're accounting here for addresses that are names, like "Alexander St", as well as those that are numbers, like "W 1st Av".
+
+Regex: `^\d+,[a-zA-Z0-9 ]+`
+
+![Matching just the address](images/addressmatch.png)
+
+Using a few lines of the csv data in regex101 to test this shows us that this works.
+
+[Test it out here!](https://regex101.com/r/OjV2RZ/1)
 
 
-<details>
-  <summary>Answer:</summary>
+Great. Now let's work on the positive lookahead. Here's a reminder of the regular expression for that: `(?=...)`
+In the positive lookahead, we want to account for whatever comes after the addresses we want to match. So, this will be a comma, at least one letter of either case, a comma, and the number of bike racks we're after. In this case, since our sample data we're using doesn't have any 5s, we'll use a 1, and change it later.
+
+Regex: `,[a-zA-Z ]+,1`
+
+![Matching just the positive lookahead](images/positivelookahead.png)
+
+We can see here that we're successfully isolating just the lines with 1 bike rack.
+
+[Test it out here!](https://regex101.com/r/0ZQBDb/1)
 
 
-</details>
+Now that we have these pieces, we can put them together and test them. Don't forget to change the 1 to a 5!
 
-## Budget
+Full regex: `^\d+,[a-zA-Z0-9 ]+(?=,[a-zA-Z ]*,5)`
+
+![The full regular expression](images/fullexpression.png)
+
+Looks like it works just like we wanted!
+
+[Test it out here!](https://regex101.com/r/LcBGux/1)
 
 
+Now we can try it on the entire csv file. Open bike-racks.csv in your text editor of choice. You can either copy the data into regex101 or work with it in the text editor. Open the find menu, make sure to enable regular expressions matching, and enter our regular expression.
 
+![Final result](images/finalresult.png)
 
+[Test it out here!](https://regex101.com/r/EWvOl8/1)
 
-<details>
-  <summary>Answer:</summary>
+You can see that the highlighted address is 1 of 12 matches found, which is the correct number!
 
+This isn't a programming workshop, so we won't go into details about this, but if you knew a bit of coding and wanted to use this information, you would now be able to pull these matches and then clean up them up so you had a tidy list of 12 addresses to work with. Regular expressions are extremely useful on their own, and even more powerful with a bit of programming knowledge - just a peek into what's possible now that you know the basics of regex.
 
-</details>
+Congratulations! You've made it to the end of the workshop. On the next page you'll find some helpful resources and more ways to improve your regex skills. Of course, if you have any further questions, you can always get in touch with the Digital Scholarship team at [digital.scholarship@ubc.ca](mailto:digital.scholarship@ubc.ca). Thanks for attending!

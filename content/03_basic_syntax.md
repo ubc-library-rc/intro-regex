@@ -7,8 +7,6 @@ nav_order: 6
 
 In this section, we'll cover the basic syntax of regular expressions.
 
-If you're using regex with a programming language, it's important to enclose your regular expression within the correct characters. For example, `tune` in Python needs to be enclosed like this: `"tune"` but in Javascript or PHP, it should be `/tune/`. The enclosing characters simply tell the programming language that what's inside is a regular expression. This won't be so important for the workshop today but will come up briefly in the next section.
-
 ## Literal characters
 
 The simplest form a regular expression can take is a plain text string without any special characters. This will match each of the literal characters in the string exactly. When reading regular expressions, it's helpful to read them according to the _meaning_ of each character, not what we usually call the character. For example, `tune` will match a literal t, a literal u, a literal n, and a literal e. `tune` will match:
@@ -81,15 +79,13 @@ Matching on `colou?r|favou?rite` (literal c, o, l, optional u, literal r, and/or
 Example 3
 {: .label .label-green}
 
-Here's our example from the last page:
-
 ![Anatomy of a regular expression](images/regexp-en.png)
 Image from [Learn Regex the Easy Way](https://github.com/ziishaned/learn-regex/blob/master/img/regexp-en.png))
 
-As already mentioned, this regular expression matches any text that is:
+This regular expression matches any text that is:
 
 - anchored to the start of a line
-- contains any number of the letters `a-z`, the numbers `0-9`, underscores, and/or hyphens
+- contains any of the letters `a-z`, the numbers `0-9`, underscores, and/or hyphens
 - 3 to 15 characters long
 - anchored at the end of the line
 
@@ -105,6 +101,6 @@ but not:
 
 > Jo
 
-Hopefully this makes more sense to you than it did a minute ago. [Test it out here!](https://regex101.com/r/H25lpZ/2) 
+[Test it out here!](https://regex101.com/r/H25lpZ/2) 
 
-Try out some other possible usernames or phrases to see what matches or doesn't match.
+This is a common regex to search for usernames (though, capital A-Z is often also permitted, but is omitted here). Try out some other possible usernames or phrases to see what matches or doesn't match.
