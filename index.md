@@ -17,7 +17,7 @@ At the end of this workshop, you will be able to:
 1. Understand basic regex syntax
 2. Apply regex syntax in common applications
 3. Understand when it might be appropriate to use regex
-4. Analyze your own workflows and adapt regex solutions to support them
+4. Adapt regex solutions to support your own work
 
 ## Schedule
 
@@ -31,4 +31,4 @@ At the end of this workshop, you will be able to:
 
 ## Resources
 
-* Please download the repository zip file [here](https://github.com/ubc-library-rc/intro-regex/archive/refs/heads/main.zip). We will be using the files in the 'data' folder during the workshop.
+Please download the repository zip file [here](https://github.com/ubc-library-rc/intro-regex/archive/refs/heads/main.zip). We will be using the files in the 'data' folder during the workshop.

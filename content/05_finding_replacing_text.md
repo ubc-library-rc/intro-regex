@@ -172,9 +172,9 @@ We can see here that we're successfully isolating just the lines with 1 bike rac
 [Test it out here!](https://regex101.com/r/0ZQBDb/1)
 
 
-Now that we have these pieces, we can put them together and test them. Don't forget to change the 1 to a 5!
+Now that we have these pieces, we can put them together and test them.
 
-Full regex: `^\d+,[a-zA-Z0-9 ]+(?=,[a-zA-Z ]*,5)`
+Full regex: `^\d+,[a-zA-Z0-9 ]+(?=,[a-zA-Z ]*,1)`
 
 ![The full regular expression](images/fullexpression.png)
 
@@ -183,14 +183,16 @@ Looks like it works just like we wanted!
 [Test it out here!](https://regex101.com/r/LcBGux/1)
 
 
-Now we can try it on the entire csv file. Open bike-racks.csv in your text editor of choice. You can either copy the data into regex101 or work with it in the text editor. Open the find menu, make sure to enable regular expressions matching, and enter our regular expression.
+Now we can try it on the entire csv file. Open bike-racks.csv in your text editor of choice. You can either copy the data into regex101 or work with it in the text editor. Open the find menu, make sure to enable regular expressions matching, and enter our regular expression. Don't forget to change the 1 to a 5!
 
 ![Final result](images/finalresult.png)
 
 [Test it out here!](https://regex101.com/r/EWvOl8/1)
 
-You can see that the highlighted address is 1 of 12 matches found, which is the correct number!
+You can see that the highlighted address is 1 of 12 matches found (see bottom of the screenshot), which is the correct number!
 
 This isn't a programming workshop, so we won't go into details about this, but if you knew a bit of coding and wanted to use this information, you would now be able to pull these matches and then clean up them up so you had a tidy list of 12 addresses to work with. Regular expressions are extremely useful on their own, and even more powerful with a bit of programming knowledge - just a peek into what's possible now that you know the basics of regex.
+
+<br>
 
 Congratulations! You've made it to the end of the workshop. On the next page you'll find some helpful resources and more ways to improve your regex skills. Of course, if you have any further questions, you can always get in touch with the Digital Scholarship team at [digital.scholarship@ubc.ca](mailto:digital.scholarship@ubc.ca). Thanks for attending!
