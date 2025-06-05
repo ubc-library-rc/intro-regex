@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Resources
+title: Tools and materials
 nav_order: 10
 ---
-# Resources
+# Tools and materials
 
 ## Tools
 

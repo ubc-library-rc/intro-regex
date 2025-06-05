@@ -195,4 +195,4 @@ This isn't a programming workshop, so we won't go into details about this, but i
 
 <br>
 
-Congratulations! You've made it to the end of the workshop. On the next page you'll find some helpful resources and more ways to improve your regex skills. Of course, if you have any further questions, you can always get in touch with the Digital Scholarship team at [digital.scholarship@ubc.ca](mailto:digital.scholarship@ubc.ca). Thanks for attending!
+Congratulations! You've made it to the end of the workshop. On the next page you'll find some helpful resources, tools, and more ways to improve your regex skills. Of course, if you have any further questions, you can always get in touch with the Digital Scholarship team at [digital.scholarship@ubc.ca](mailto:digital.scholarship@ubc.ca). Thanks for attending!
