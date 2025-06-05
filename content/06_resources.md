@@ -21,13 +21,11 @@ nav_order: 10
 ## Character lists
 
 * [ASCII](https://en.wikipedia.org/wiki/ASCII#Character_set) - Wikipedia
-* [Unicode Character Table](https://unicode-table.com/en/)
-* [Emoji unicode characters for use on the web](https://apps.timwhitlock.info/emoji/tables/unicode)
+* [Unicode Character Table](https://symbl.cc/)
+* [Emoji unicode characters for use on the web](https://www.unicode.org/emoji/charts/full-emoji-list.html)
 
 ## Challenges
 
 * [Regex Crossword](https://regexcrossword.com/) - Find the character that matches regex clues for each square in the puzzle
 * [Regex Golf](https://alf.nu/RegexGolf) - Try to match all the words in one column but not the other
-* [RegexPlay](http://play.inginf.units.it/#/) - Test your regex skills!
 * [Regular expression exercises](https://regex.sketchengine.co.uk/) - Sketch Engine
-
