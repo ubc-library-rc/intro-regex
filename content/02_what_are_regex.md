@@ -11,7 +11,7 @@ In this section we will learn about what regular expressions are, and learn some
 
 A regular expression (regex for short) is a series of characters that describe a _pattern_ in a string of text according to a standardized set of rules. This pattern gets compared to the string and either it matches or doesn't - it's kind of like the 'find' function but with superpowers. You may be familiar with the concept of a wildcard character. For example, in Microsoft Word, the `?` character allows you to search for 'any character'. So, searching for `c?t` would find each of the following results: `cat`, `cot`, `cut`, `c t`. 
 
-Regular expressions are similar to this, but it's a much expanded and more powerful system. Regular expressions are also standardized across programs, whereas wildcards are usually program specific and therefore less useful.
+Regular expressions are similar to this, but it's a much expanded and more powerful system. Regular expressions are also more or less standardized across programs (with some dialectal variations depending on context), whereas wildcards are usually program specific and therefore less useful.
 
 ## Why are regular expressions useful?
 
