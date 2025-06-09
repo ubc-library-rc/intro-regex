@@ -34,22 +34,24 @@ Any string of letters and/or numbers that doesn't contain metacharacters will be
 
 What are metacharacters, then? They're characters (or **tokens**) that have special meaning when used in regular expressions:
 
-`.` | Period matches any single character, except a newline.
-`*` | Matches as many of the preceding token as possible (including 0) (greedy).
-`+` | Matches 1 or more repetitions of the preceding token.
-`?` | Matches 0 or 1 of the preceding token (makes the preceding token optional).
-`[]` | Creates a character class. Matches a single character contained between the square brackets. For example, above, we wrote '[Tt]une' which matches for both 'Tune' and 'tune'.
-`[^]` | Creates a negated character class. Matches a single character that is **not** contained between the square brackets.
-`[a-z]` | Square brackets can also be used for ranges. This range says match any character in the range 'a-z'. This can also be done with numbers, for example '0-9'.
-`[^a-z]`  | Similarly, ranges can be negated as well.
-`{x}` | Curly braces. This will match exactly x number of the preceding character. For example 'a{3}' matches exactly 3 of a.
-`{x,}` | Curly braces. This will match n or more times of the preceding character. For example, 'a{3,}' will match 3 or more times of a.
-`{n,m}` | Curly braces. These match at least n but not more than m times of the preceding character. For example, '{1,3}' will match at least 1 time but not more than 3 times.
-`(xyz)` | Character group. Matches the characters xyz in that exact order.
-`|` | Alternation. Matches either the characters before or the characters after the token (if both are found, both will be matched).
-`\` | Escapes the next character. This allows you to make metacharacters become literal characters (for example, '\?' will match a literal question mark).
-`^` | Matches the beginning of a line.
-`$` | Matches the end of a line.
+| Input        | Pattern         | Description                                                                                                                                                                       | Matches | Return                                                     |
+|--------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|------------------------------------------------------------|
+| Hello World! | `.`             | Matches any single character, except a newline.                                                                                                                                   | 12      | 'H', 'e', 'l', l'', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!' |
+| Hello World! | `lo*`           | Matches as many of the preceding token as possible (including 0) (greedy).                                                                                                        | 2       | 'l', 'lo'                                                  |
+| Hello World! | `o+`            | Matches 1 or more repetitions of the preceding token.                                                                                                                             | 2       | 'o', 'o'                                                   |
+| Hello World! | `lo?`           | Matches 0 or 1 of the preceding token (makes the preceding token optional).                                                                                                       | 2       | 'lo', 'l'                                                  |
+| Hello World! | `[aeiou]`       | Creates a character class. Matches a single character contained between the square brackets. <br>For example, above, we wrote ‘[Tt]une’ which matches for both ‘Tune’ and ‘tune’. | 3       | 'e', 'o', 'o'                                              |
+| Hello World! | `^aeiou\s`      | Creates a negated character class. Matches a single character that is not contained <br>between the square brackets.                                                              | 8       | 'H', 'l', l'', 'W', 'r', 'l', 'd', '!'                     |
+| Hello World! | `[a-z]`         | Square brackets can also be used for ranges. This range says match any character <br>in the range ‘a-z’. This can also be done with numbers, for example ‘0-9’.                   | 8       | 'e', 'l', l'', 'o', 'o', 'r', 'l', 'd'                     |
+| Hello World! | `[^a-z]`        | Similarly, ranges can be negated as well.                                                                                                                                         | 4       | 'H', ' ', 'W', '!'                                         |
+| Hello World! | `l{2}`          | Curly braces. This will match exactly x number of the preceding character. <br>For example ‘a{3}’ matches exactly 3 of a.                                                         | 1       | 'll'                                                       |
+| Hello World! | `l{2}`          | Curly braces. This will match n or more times of the preceding character. <br>For example, ‘a{3,}’ will match 3 or more times of a.                                               | 1       | 'll'                                                       |
+| Hello World! | `l{n, m}`       | Curly braces. These match at least n but not more than m times of the preceding character. <br>For example, ‘{1,3}’ will match at least 1 time but not more than 3 times.         | 3       | 'll', 'l', 'l'                                             |
+| Hello World! | `(Hello)`       | Character group. Matches the characters Hello in that exact order.                                                                                                                | 1       | 'Hello'                                                    |
+| Hello World! | `Hello\| World` | Alternation. Matches either the characters before or the characters after the token <br>(if both are found, both will be matched).                                                | 2       | 'Hello', ' World'                                          |
+| Hello World? | 'Hello World\?` | Escapes the next character. This allows you to make metacharacters become literal characters <br>(for example, ‘\?’ will match a literal question mark).                          | 1       | 'Hello World!'                                             |
+| Hello World! | `^World!`       | Matches the beginning of a line.                                                                                                                                                  | 0       | No match found                                             |
+| Hello World! | `$World!`       | Matches the end of a line.                                                                                                                                                        | 1       | 'World!'                                                   |
 
 
 Metacharacters can be combined, too. For example, `.` matches any character except a newline, once. `.+` will match any character except a newline, as many times as possible, but at least once.
