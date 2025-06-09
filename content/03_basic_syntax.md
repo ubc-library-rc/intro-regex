@@ -34,6 +34,8 @@ Any string of letters and/or numbers that doesn't contain metacharacters will be
 
 What are metacharacters, then? They're characters (or **tokens**) that have special meaning when used in regular expressions:
 
+
+
 | Input        | Pattern         | Description                                                                                                                                                                       | Matches | Return                                                     |
 |--------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|------------------------------------------------------------|
 | Hello World! | `.`             | Matches any single character, except a newline.                                                                                                                                   | 12      | 'H', 'e', 'l', l'', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!' |
@@ -52,6 +54,7 @@ What are metacharacters, then? They're characters (or **tokens**) that have spec
 | Hello World? | 'Hello World\?` | Escapes the next character. This allows you to make metacharacters become literal characters <br>(for example, ‘\?’ will match a literal question mark).                          | 1       | 'Hello World!'                                             |
 | Hello World! | `^World!`       | Matches the beginning of a line.                                                                                                                                                  | 0       | No match found                                             |
 | Hello World! | `$World!`       | Matches the end of a line.                                                                                                                                                        | 1       | 'World!'                                                   |
+
 
 
 Metacharacters can be combined, too. For example, `.` matches any character except a newline, once. `.+` will match any character except a newline, as many times as possible, but at least once.
