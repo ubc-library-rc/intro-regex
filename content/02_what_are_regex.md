@@ -25,7 +25,7 @@ Regular expressions are similar to this, but it's a much expanded and more power
 
 ## Why are regular expressions useful?
 
-Being able to match patterns in text allows you to be precise with what you're finding and and it also allowed you to manipulate text in a more advanced and specific way than using something like the 'find' function. Regular expressions can also be used with programming languages like Python or R, making them even more powerful. For example, you could use regular expressions to pull specific information from a text file and then manipulate it with Python code. After learning regular expressions, it's likely you'll find yourself in many situations where they can be used to save time, where you might not have expected it!
+Being able to match patterns in text allows you to be precise with what you're finding and and it also allowed you to manipulate text in a more advanced and specific way than using something like the 'find' function. So, in our example above, with regular expressions you can isolate just the digits of the phone numbers (and format them all the same if you wanted, too!). Regular expressions can also be used with programming languages like Python or R, making them even more powerful. For example, you could use regular expressions to pull specific information from a text file and then manipulate it with Python code. After learning regular expressions, it's likely you'll find yourself in many situations where they can be used to save time, where you might not have expected it!
 
 ## Testing regular expressions
 
