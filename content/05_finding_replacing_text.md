@@ -53,6 +53,8 @@ The brackets create a group and the `?:` make it into a non-capturing group (pre
 
 [Test it out here!](https://regex101.com/r/MgOkK2/2)
 
+<br>
+
 Example 3
 {: .label .label-green}
 
@@ -69,6 +71,7 @@ You're helping organize a community event and you’ve got a big text document f
 > 555.123.4567
 
 You need to pull just the phone numbers from this mess, but without spending hours doing it by hand. You'd like to match the phone numbers as they're written, so including dashes, brackets, spaces, periods. How could you match these?
+
 
 **Answer:**
 
