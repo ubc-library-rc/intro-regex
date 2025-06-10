@@ -5,7 +5,17 @@ nav_order: 5
 ---
 # What are regular expressions?
 
-In this section we will learn about what regular expressions are, and learn some of the basic syntax of regular expressions.
+Imagine you're helping organize a community event and you’ve got a big text document full of messages from volunteers. Everyone sent their phone numbers in different formats:
+
+> Call me at 555-123-4567
+> 
+> My number is (555) 123 4567
+>
+> 5551234567
+>
+> 555.123.4567
+
+You need to pull just the phone numbers from this mess, but ideally without spending hours scrolling and copying by hand. The usual 'find' tool won't work here, so what do you do? Enter regular expressions!
 
 ## Regular expressions
 
