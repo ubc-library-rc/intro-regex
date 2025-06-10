@@ -102,7 +102,7 @@ This is just a small sample of the lines in the text file, but you can see that 
 
 ## Vancouver wiki
 
-Using regular expressions to work with HTML is contentious, as hinted at on our introduction page to this workshop:
+Using regular expressions to work with HTML is contentious:
 
 ![Don't use regex to parse XHTML](images/html_regex_so_snippet.png)
 
