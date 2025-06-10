@@ -11,7 +11,7 @@ If you have heard about regular expressions before, you have probably encountere
 
 (Image from [XKCD](https://xkcd.com/208/))
 
-So, what are regular expressions? What can they be used for? And should you go ahead and use them to parse HTML anyway?
+So, what are regular expressions? And what can they be used for?
 
 **Regular expressions** (often referred to as **regex** or **regexp**, and abbreviated as **RE**) are a standardized ("regular") way of representing patterns in text using special symbols and syntax ("expressions").
 
