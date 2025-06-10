@@ -53,6 +53,38 @@ The brackets create a group and the `?:` make it into a non-capturing group (pre
 
 [Test it out here!](https://regex101.com/r/MgOkK2/2)
 
+Example 3
+{: .label .label-green}
+
+Remember our example from the start of the workshop?
+
+You're helping organize a community event and you’ve got a big text document full of messages from volunteers. Everyone sent their phone numbers in different formats:
+
+> Call me at 555-123-4567
+> 
+> My number is (555) 123 4567
+>
+> 5551234567
+>
+> 555.123.4567
+
+You need to pull just the phone numbers from this mess, but without spending hours doing it by hand. You'd like to match the phone numbers as they're written, so including dashes, brackets, spaces, periods. How could you match these?
+
+**Answer:**
+
+Matching on: `\(?\d{3}\)?[ .-]?\d{3}[ .-]?\d{4}`
+
+This regular expression can be broken down into the following parts:
+
+`\(?\d{3}\)?` | An optional literal left bracket, followed by three digits, followed by an optional literal right bracket. The area code.
+`[ .-]?` | The characters space, period, and dash, all optional. Possible separators.
+`\d{3}` | Three digits. The first part of the phone number.
+`[ .-]?` | The characters space, period, and dash, all optional. Possible separators.
+`\d{4}` | Four digits. The second part of the phone number.
+
+Put together, this regular expression will match each of the phone numbers and none of the other text.
+
+[Test it out here!](https://regex101.com/r/kC9zNY/1)
 
 # Hands on exercises
 
