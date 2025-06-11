@@ -53,7 +53,7 @@ What are metacharacters, then? They're characters (or **tokens**) that have spec
 | Hello World! | `l{1,}`          | Curly braces. This will match n or more times of the preceding character. <br>For example, ‘a{3,}’ will match 3 or more times of a.                                               | 2       | 'll', 'l'                                                       |
 | Hello Worllld! | `l{1,3}`       | Curly braces. These match at least n but not more than m times of the preceding character. <br>For example, ‘{1,3}’ will match at least 1 time but not more than 3 times.         | 2       | 'll', 'lll'                                             |
 | Hello World! | `(Hello)`       | Brackets. Character group. Matches the characters Hello in that exact order.                                                                                                                | 1       | 'Hello'                                                    |
-| Hello World! | `Hello\|World` | Pipe. Used for alternation. Matches either the characters before or the characters after the token <br>(if both are found, both will be matched).                                                | 2       | 'Hello', 'World'                                          |
+| Hello World! | `Hello&#124;World` | Pipe. Used for alternation. Matches either the characters before or the characters after the token <br>(if both are found, both will be matched).                                                | 2       | 'Hello', 'World'                                          |
 
 
 
