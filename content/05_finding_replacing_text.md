@@ -136,9 +136,13 @@ Matching on: `.{3}[^\s-].{3}`
 
 This is just a small sample of the lines in the text file, but you can see that only the gibberish lines have been matched. 
 
+[Test it out here!](https://regex101.com/r/YsXg9J/1)
+
 This file is 553 lines long, so it's not **too** bad to scroll through and be sure that there aren't any other separators like space or dash in the valid postal codes. But, what if the file were 2000 lines long, or 10000 lines long, or more? What if, somewhere in there, someone has used a period or a plus sign to separate the two parts of the postal code?
 
 A better regular expression might be to match on: `\w{7}`
+
+[Test it out here!](https://regex101.com/r/pQ4XPH/1)
 
 This regular expression will match any character a-z, A-Z, 0-9, or underscore that is 7 characters long. So, it omits many of the separator characters that could be used. But what if someone used an underscore?
 
@@ -146,10 +150,9 @@ Matching on: `[a-zA-Z0-9]{7}`
 
 This is probably the best of the three to use in this case. We can be sure that no matter what the separator is in between the two parts of the postal codes, that this expression won't match them and will only match the gibberish. 
 
+[Test it out here!](https://regex101.com/r/bGdtn7/1)
+
 It's common when working with regular expressions that there's often more than one solution to a problem. Given this exact dataset, each of these expressions is equally good. But given a larger dataset with potential unknowns, the last regular expression is the best. This set of examples show how you might think about finessing your regular expression based on the data you're working with (or not working with).
-
-[Test it out here!](https://regex101.com/r/RDWI50/1)
-
 
 ## Vancouver wiki
 
