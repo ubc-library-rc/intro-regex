@@ -138,7 +138,7 @@ This is just a small sample of the lines in the text file, but you can see that 
 
 [Test it out here!](https://regex101.com/r/YsXg9J/1)
 
-This file is 553 lines long, so it's not **too** bad to scroll through and be sure that there aren't any other separators like space or dash in the valid postal codes. But, what if the file were 2000 lines long, or 10000 lines long, or more? What if, somewhere in there, someone has used a period or a plus sign to separate the two parts of the postal code?
+This file is 553 lines long, so it's not **too** bad to scroll through and be sure that there aren't any other separators besides space or dash in the valid postal codes. But, what if the file were 2000 lines long, or 10000 lines long, or more? What if, somewhere in there, someone has used a period or a plus sign to separate the two parts of the postal code?
 
 A better regular expression might be to match on: `\w{7}`
 
