@@ -5,7 +5,7 @@ nav_order: 5
 ---
 # What are regular expressions?
 
-Imagine you're helping organize a community event and you’ve got a big text document full of messages from volunteers. Everyone sent their phone numbers in different formats:
+Imagine you're helping organize a community event and you've got a big text document full of messages from volunteers. Everyone sent their phone numbers in different formats:
 
 > Call me at 555-123-4567
 > 
@@ -25,10 +25,10 @@ Regular expressions are similar to this, but it's a much expanded and more power
 
 ## Why are regular expressions useful?
 
-Being able to match patterns in text allows you to be precise with what you're finding and and it also allowed you to manipulate text in a more advanced and specific way than using something like the 'find' function. So, in our example above, with regular expressions you can isolate just the digits of the phone numbers (and format them all the same if you wanted, too!). Regular expressions can also be used with programming languages like Python or R, making them even more powerful. For example, you could use regular expressions to pull specific information from a text file and then manipulate it with Python code. After learning regular expressions, it's likely you'll find yourself in many situations where they can be used to save time, where you might not have expected it!
+Being able to match patterns in text allows you to be precise with what you're finding and it also allows you to manipulate text in a more advanced and specific way than using something like the 'find' function. So, in our example above, with regular expressions you can isolate just the digits of the phone numbers (and format them all the same if you wanted, too!). Regular expressions can also be used in programming languages like Python or R, making them even more powerful.  For example, you could write a Python script that uses regular expressions to extract specific information from a text file and then manipulate that information for a particular purpose. After learning regular expressions, it's likely you'll find yourself in many situations where they can be used to save time, where you might not have expected it!
 
 ## Testing regular expressions
 
 Before we continue, there is a resource you should pull up on your computer browser to follow along as we go.
 
-[regex101](https://regex101.com/) is free online tool for learning, building, and testing regular expressions. You can write your regular expression and write or paste in test strings or longer text to see the matches that you will get. There are many tools like this out there, but this is the one we usually use at Digital Scholarship at the Library. We'll be linking to examples on this website a couple times throughout this workshop so this is your introduction to it!
+[regex101](https://regex101.com/) is a free online tool for learning, building, and testing regular expressions. You can write your regular expression and write or paste in test strings or longer text to see the matches that you will get. There are many tools like this out there, but this is the one we usually use at Digital Scholarship at the Library. We'll be linking to examples on this website a couple times throughout this workshop so this is your introduction to it!

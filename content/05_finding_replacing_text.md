@@ -15,7 +15,7 @@ Here's a situation where regex would be useful to manipulate text.
 You have a 100 page text document and you've realized that, throughout, there are words that have three, or four, or more 'a's in a row. You'd like to cut these down to the correct number of 'a's (one), but your document also has the name 'Isaac' in it, which you'd like to leave alone. You don't want to go through all 100 pages manually. How do you find and correct the typos?
 
 
-**Answer:**
+**Answer (part 1):**
 
 Matching on: `(?<![Ii]s)a{2,}`
 
@@ -26,6 +26,13 @@ So, this regular expression says: match every instance of 2 or more 'a's, except
 > Lorem ipsum dolor sit **aa**met, consectetur **aaa**dipiscing elit, Isaac sed do eiusmod tempor incididunt ut labore et dolore magn**aaa** aliqua. Ut enim ad minim veni**aaaa**m, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, isaac. Duis **aaaaaa**ute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null**aaaa** pariatur. Isaac excepteur sint occaecat cupidatat non proident, sunt in culp**aa** qui officia deserunt mollit anim id est laborum.
 
 You can then choose to replace all of these multiple 'a's with single 'a's.
+
+**Answer (part 2):**
+Matching on: `(?<![Ii]s)a{2,}|(?<=[Ii]s)a{2,}(?!c\b)`
+
+The expression in part 1, however, prevents a misspelling of 'Isabelle' or 'Isaacson' from being corrected. A regular expression solution sometimes requires multiple patterns to be combined.
+
+We can use the `|` ("or") to add another expression that covers cases where words starting with 'Isa' and not ending with 'c' will have the multiple 'a's detected.
 
 [Test it out here!](https://regex101.com/r/QUiHLd/1)
 
@@ -47,7 +54,7 @@ How might you match all of these?
 
 Matching on: `(?:-?\d){10,13}`
 
-The brackets create a group and the `?:` make it into a non-capturing group (prevents some of the numbers being captured when we don't need them). Then we have an optional hyphen followed by a digit, matching that pattern at least 10 and up to 13 times. This accounts for all the ISBNs:
+The parentheses create a group, and the `?:` makes it a non-capturing group (prevents some of the numbers from being captured when we don't need them). Then we have an optional hyphen followed by a digit, matching that pattern at least 10 and up to 13 times. This accounts for all the ISBNs:
 
 > The new bestseller, with its thought-provoking narrative, can be found under the ISBN **978-0-321-76572-3**. If you're searching for the classic edition, look for **0123456789**. This highly anticipated sequel is arriving soon, listed with the ISBN **9781234567890**. I just finished reading another incredible book, its unique identifier is **0-7432-7356-7**. For anyone interested in the updated academic text, the reference is **978-0-13-215881-6**. The children's picture book, a delightful read, has the ISBN **0439023521**. I finally tracked down that rare first edition; its ISBN is **9781234567890**. The publisher recently re-released a series of novels, starting with **0-06-093546-9**. You can pre-order the collector's edition using the ISBN **978-1-234-56789-0**. My local library just acquired a fascinating new title, cataloged as **0071353986**.
 

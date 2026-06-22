@@ -94,7 +94,7 @@ Lookaheads and lookbehinds can be a little confusing to wrap your head around in
 
 ## Flags
 
-If you're using regex with a programming language, it's important to enclose your regular expression within the correct characters. For example, `tune` in Python needs to be enclosed like this: `"tune"`. In Javascript or PHP, it should be `/tune/` and other programming languages may use other characters. The enclosing characters tell the programming language that what's inside is a regular expression.
+If you're using regex with a programming language, it's important to enclose your regular expression within the correct characters. For example, `tune` in Python needs to be enclosed like this: `"tune"`. In JavaScript or PHP, it should be `/tune/` and other programming languages may use other characters. The enclosing characters tell the programming language that what's inside is a regular expression.
 
 Flags, also known as modifiers, come after the regular expression (outside of the double quotation marks or slashes) and affect the entire regular expression. They can be used in any order or combination.
 
