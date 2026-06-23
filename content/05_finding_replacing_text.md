@@ -52,7 +52,7 @@ How might you match all of these?
 
 **Answer:**
 
-Matching on: `(?:-?\d){10,13}`
+Matching on: `(?:[-?\d]){10,13}`
 
 The parentheses create a group, and the `?:` makes it a non-capturing group (prevents some of the numbers from being captured when we don't need them). Then we have an optional hyphen followed by a digit, matching that pattern at least 10 and up to 13 times. This accounts for all the ISBNs:
 
